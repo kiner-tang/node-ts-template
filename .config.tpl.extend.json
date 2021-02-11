@@ -24,8 +24,8 @@
       "description": "{{description}}",
       "version": "{{version}}",
       "scripts": {
-        "dev": "tsc {{entry}} --watch",
-        "build": "cp -rf ./src ./output & tsc"
+        "dev": "ttsc {{entry}} -w",
+        "build": "cp -rf ./src ./output & cd ./output & rollup -c"
       }
     }
   }
